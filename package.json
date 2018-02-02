@@ -5,6 +5,9 @@
   "main": "app.js",
   "author": "Sean Canham, Alex Jakel",
   "license": "Adknown",
+  "scripts": {
+    "start": "app.js"
+  },
   "dependencies": {
     "express": "^4.x.x",
     "body-parser": "^1.x.x",
