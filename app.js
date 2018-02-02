@@ -20,8 +20,18 @@ app.post('/lunch', function(req, res, next)
 {
   var input = req.body.text;
   var username = req.body.user_name;
- // var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
+  var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
 input = input.lower();
+
+    switch (command)
+    {
+        case "/vote":
+            //call vote function
+            break;
+        case "/results":
+            //show all results
+            break;
+    }
 //
 // if(input == 'works'){
 //   worksvotes++;
