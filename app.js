@@ -31,9 +31,9 @@ if(input == 'works'){
   royalelectricvotes++;
 }
 
-var output = "works - " + worksvotes + '\n'
-              + "buon gusto - " + buongustovotes + '\n'
-              + "royal electric - " + royalelectricvotes;
+var output = "works - " + worksvotes.toString()
+              + "buon gusto - " + buongustovotes.toString()
+              + "royal electric - " + royalelectricvotes.toString();
 
   var botPayLoad = {
     text: output
