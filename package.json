@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Simple bot for lunch voting",
   "main": "app.js",
+  "scripts": {
+    "start": "./app.js"
+  },
   "author": "Sean Canham, Alex Jakel",
   "license": "Adknown",
   "dependencies": {
