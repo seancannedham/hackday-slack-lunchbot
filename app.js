@@ -22,21 +22,21 @@ app.post('/lunch', function(req, res, next)
   var username = req.body.user_name;
  // var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
 input = input.lower();
-
-if(input == 'works'){
-  worksvotes++;
-} else if(input == 'buon gusto'){
-  buongustovotes++;
-} else {
-  royalelectricvotes++;
-}
-
-var output = "works - " + worksvotes + '\n'
-              + "buon gusto - " + buongustovotes + '\n'
-              + "royal electric - " + royalelectricvotes;
+//
+// if(input == 'works'){
+//   worksvotes++;
+// } else if(input == 'buon gusto'){
+//   buongustovotes++;
+// } else {
+//   royalelectricvotes++;
+// }
+//
+// var output = "works - " + worksvotes.toString()
+//               + "buon gusto - " + buongustovotes.toString()
+//               + "royal electric - " + royalelectricvotes.toString();
 
   var botPayLoad = {
-    text: output
+    text: input
   };
   //var botPayLoad will be set here
   //return res.status(200).json(botPayLoad)
