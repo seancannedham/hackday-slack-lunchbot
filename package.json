@@ -1,6 +1,9 @@
 {
   "name": "LunchVotingBot",
   "version": "0.0.1",
+  "engines": {
+    "node": "8.9.4"
+  },
   "description": "Simple bot for lunch voting",
   "main": "app.js",
   "author": "Sean Canham, Alex Jakel",
