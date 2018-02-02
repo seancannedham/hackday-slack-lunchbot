@@ -12,13 +12,14 @@ app.listen(port, function() {
   console.log('Listenting on port ' + port);
 });
 
-app.post('/hello', function(req, res, next)
+app.post('/lunch', function(req, res, next)
 {
+  var input = req.body.text;
   var username = req.body.user_name;
 //  var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
 
   var botPayLoad = {
-    text: 'Hello ' + username
+    text: input
   };
   //var botPayLoad will be set here
   //return res.status(200).json(botPayLoad)
