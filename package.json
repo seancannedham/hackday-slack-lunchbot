@@ -1,0 +1,13 @@
+{
+  "name": "LunchVotingBot",
+  "version": "0.0.1",
+  "description": "Simple bot for lunch voting",
+  "main": "app.js",
+  "author": "Sean Canham, Alex Jakel",
+  "license": "Adknown",
+  "dependencies": {
+    "express": "^4.x.x",
+    "body-parser": "^1.x.x",
+    "request": "2.56.x"
+  }
+}
