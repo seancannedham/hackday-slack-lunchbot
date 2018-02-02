@@ -18,14 +18,13 @@ app.post('/hello', function(req, res, next)
 //  var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
 
   var botPayLoad = {
-    text: 'Hello ' + username;
-  }
+    text: 'Hello ' + username
+  };
   //var botPayLoad will be set here
   //return res.status(200).json(botPayLoad)
   if (username !== 'slackbot'){
     return res.status(200).json(botPayLoad);
   } else {
     return res.status(200).end();
-  }
   }
 });
