@@ -6,7 +6,7 @@
   "author": "Sean Canham, Alex Jakel",
   "license": "Adknown",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.x.x",
