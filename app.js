@@ -21,7 +21,7 @@ app.post('/lunch', function(req, res, next)
   var input = req.body.text;
   var username = req.body.user_name;
   // var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
-input = input.lower();
+// input = input.lower();
 
     // switch (command)
     // {
