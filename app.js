@@ -16,7 +16,7 @@ app.listen(port, function() {
   console.log('Listenting on port ' + port);
 });
 
-app.post('/vote', function(req, res, next)
+app.post('/lunch', function(req, res, next)
 {
   var input = req.body.text;
   var username = req.body.user_name;
@@ -43,4 +43,20 @@ input = input.lower();
   } else {
     return res.status(200).end();
   }
+});
+
+app.post('/aws_inbound', function(req, res, next){
+  var input = req.body.text;
+  var username = req.body.user_name;
+
+  var botPayLoad = {
+    text: "yah yeet"
+  };
+
+  if (username !== 'slackbot'){
+    return res.status(200).json(botPayLoad);
+  } else {
+    return res.status(200).end();
+  }
+
 });
