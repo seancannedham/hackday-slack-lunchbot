@@ -20,8 +20,7 @@ app.post('/lunch', function(req, res, next)
 {
   var input = req.body.text;
   var username = req.body.user_name;
-<<<<<<< Updated upstream
-  var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
+  // var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
 input = input.lower();
 
     switch (command)
@@ -33,24 +32,9 @@ input = input.lower();
             //show all results
             break;
     }
-=======
-//  var option = getVotedOption(text); //not sure what the format of text is, defer impl this fn
->>>>>>> Stashed changes
-//
-// if(input == 'works'){
-//   worksvotes++;
-// } else if(input == 'buon gusto'){
-//   buongustovotes++;
-// } else {
-//   royalelectricvotes++;
-// }
-//
-// var output = "works - " + worksvotes.toString()
-//               + "buon gusto - " + buongustovotes.toString()
-//               + "royal electric - " + royalelectricvotes.toString();
 
   var botPayLoad = {
-    text: input
+    text: "Hello World"
   };
   //var botPayLoad will be set here
   //return res.status(200).json(botPayLoad)
