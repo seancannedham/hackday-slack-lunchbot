@@ -28,18 +28,18 @@ app.post('/lunch', function(req, res, next)
   }
 });
 
-// app.post('/aws_inbound', function(req, res, next){
-//   var input = req.body.text;
-//   var username = req.body.user_name;
-//
-//   var botPayLoad = {
-//     text: "yah yeet"
-//   };
-//
-//   if (username !== 'slackbot'){
-//     return res.status(200).json(botPayLoad);
-//   } else {
-//     return res.status(200).end();
-//   }
-//
-// });
+app.post('/aws_inbound', function(req, res, next){
+  var input = req.body.text;
+  var username = req.body.user_name;
+
+  var botAwsPayLoad = {
+    text: "yah yeet"
+  };
+
+  if (username !== 'slackbot'){
+    return res.status(200).json(botAwsPayLoad);
+  } else {
+    return res.status(200).end();
+  }
+
+});
